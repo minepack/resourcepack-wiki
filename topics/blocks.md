@@ -6,3 +6,6 @@ image: block.png
 
 **Custom Blocks**
 Meow
+
+
+![TEST](/img/block.png)
