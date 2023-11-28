@@ -1,0 +1,230 @@
+html {
+    background-color: rgb(255, 255, 255);
+}
+
+* {
+    --my-gray: #78736F;
+    color: #333131;
+    font-family: ui-sans-serif,system-ui,Segoe UI;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.sidebar {
+    min-width: 15em;
+    max-width: 15em;
+    padding-top: 1rem;
+    height: 100vh;
+    background-color: #f8f8f8;
+    z-index: 1;
+    overflow: auto;
+    position: fixed;
+
+    & .branding {
+        padding-left: 1rem;
+        font-weight: bold;
+    }
+    
+    & a {
+	    text-decoration: none;
+    }
+
+    & .links {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4em;
+        margin-left: 1rem;
+        color: #3b3a3a;
+        font-size: 14px;
+        font-weight: 600;
+
+        & .link {
+            color: var(--my-gray);
+        }
+
+        & .category {
+            margin-top: 1rem;
+        }
+    }
+
+}
+
+.content {
+    margin: 2rem 1rem 5rem 18rem;
+    max-width: 60rem;
+    text-decoration: none;
+
+    & .breadcrumb {
+        display: flex;
+        gap: 0.6rem;
+
+        & a {
+	        text-decoration: none;
+            color: var(--my-gray);
+        }
+
+        .current {
+            color: #000000
+        }
+    }
+
+    & p {
+        line-height: 1.6;
+    }
+    
+
+    & img {
+        max-width: 95%;
+        max-height: 50vh;
+        display: block;
+    }
+    
+    & a {
+    	color: blue;
+    }
+
+    & :is(h1, h2, h3, h4, h5, h6) a {
+    	color: #000000;
+    	text-decoration: none;
+    }
+
+    & warning {
+        display: inline-block;
+        padding: 10px 15px;
+        color: white;
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        min-width: 90%;
+        min-width: fit-content;
+        margin-bottom: 1rem;
+        background-color: #f8d7da;
+        color: #721c24;
+    }
+
+    & info {
+        display: inline-block;
+        padding: 10px 15px;
+        color: white;
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        min-width: 90%;
+        min-width: fit-content;
+        margin-bottom: 1rem;
+        background-color: rgb(43, 48, 119);
+        color: #e4e3e3;
+
+        & * {
+            color: #ffffff;
+        }
+    }
+
+    & #tags {
+        display: flex;
+        margin-bottom: 1rem;
+        overflow-x: auto;
+        gap: 0.4rem;
+
+        & .tag {
+            padding: 0.3rem;
+            border-radius: 7px;
+            border: 2px solid transparent;
+        }
+
+        & .tag:hover {
+			cursor: pointer;
+        }
+        
+        & .tag.active {
+            border: 2px solid red;
+        }
+
+    }
+    
+    & #cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 100%;
+        
+        & a {
+	    	text-decoration: none;
+    	}
+        
+        & .card {    
+            padding: 1rem;
+            border: 2px solid #d4d4d4;
+            border-radius: 7px;
+
+            & .title {
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            & .description {
+                font-size: 17px;
+            }
+
+            & .tags {
+                display: flex;
+                flex-direction: row;
+                gap: 0.4rem;
+
+                & .tag {
+                    padding: 0.3rem;
+                    border-radius: 7px;
+                }
+            }
+
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 660px) {
+
+    .sidebar {
+        padding-right: 0;
+        width: 100%;
+        max-width: 100%;
+        max-height: 5rem;
+        overflow: hidden;
+        position: relative;
+
+        & .links {
+            padding-top: 0rem;
+            margin-top: 0rem;
+            flex-direction: row;
+            gap: 1rem;
+            overflow-x: auto;
+            flex-wrap: nowrap;
+
+            & .category {
+                color: #141414;
+            }
+
+
+            & .link {
+                display: none;
+            }
+
+
+        }
+    }
+
+    .content {
+        margin-top: 0.9rem;
+        margin-left: 0.9rem;
+        margin-right: 0.9rem;
+    }
+
+}
