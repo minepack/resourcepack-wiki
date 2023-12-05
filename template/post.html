@@ -41,7 +41,14 @@
 		<!-- Content  -->
 
 		{{ content | raw }}
+
+		{% if github %}
+		<br>
+		<br>
+		<p>Edit on <a href="{{ github }}" target="_blank">GitHub</a></p>
+		{% endif %}
 	</div>
+
 
 	{% if not (versions is empty) %}
 
