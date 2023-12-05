@@ -1,0 +1,120 @@
+{% extends "source/template/page.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/prism.css">
+<script src="/prism.js"></script>
+{% endblock %}
+
+{% block title %}{{ post.title}}{% endblock %}
+
+{% block content %}
+
+	<div class="content">
+
+		<!-- Breadcrumb  -->
+		<div class="breadcrumb">
+
+		   {% for crumb in breadcrumb.crumbs %}
+			   {% if loop.last %}   			
+			   <a href="{{ crumb.href }}" class="current">{{ crumb.title }}</a>
+			   {% else %}
+			   <a href="{{ crumb.href }}">{{ crumb.title }}</a>>
+			   {% endif %}
+		   {% endfor %}
+		
+		</div>
+
+		<!-- Title  -->
+		<h1>{{ post.title }}</h1>
+
+		<!-- Versions  -->
+
+		{% if not (versions is empty) %}
+			<label for="version">Post version:</label>
+					<select name="version" id="version" onchange="updateContent(event)">
+				{% for version in versions %}
+			<option value="{{ version }}">{{ version }}</option>		
+				{% endfor %}
+	</select>
+		{% endif %}
+
+		<!-- Content  -->
+
+		{{ content | raw }}
+	</div>
+
+	{% if not (versions is empty) %}
+
+	<script>
+		function updateContent(event) {
+			event.preventDefault();
+
+			let selectedVersion = document.getElementById('version').value;				
+
+			if (event.type !== 'DOMContentLoaded') {
+				const url = new URL(window.location.href);
+				url.searchParams.set('version', selectedVersion);
+				history.replaceState(null, null, url);
+			}
+
+				{% for entry in sections %}
+				var {{ entry.key }} = document.getElementById('{{ entry.key }}');
+			{% endfor %}
+
+			switch (selectedVersion) {
+				{% for version in versions %}
+
+				case "{{ version }}":
+
+					{% for entry in sections %}
+
+						{% set added = "false" %}
+
+						{% for version_name in entry.value %}
+							{% if version_name.name equals version %}
+
+								{{ entry.key }}.innerHTML = `{{ version_name.content | raw }}`
+
+
+
+								{% set added = "true" %}
+
+							{% endif %}
+						{% endfor %}
+
+						{% if added equals "false" %}
+
+							{{ entry.key }}.innerHTML = ``
+
+						{% endif %}
+
+						{% set test = "false" %}
+
+					{% endfor %}
+					break;
+				{% endfor %}
+			}
+
+			Prism.highlightAll();
+		}
+
+		function loadSavedState() {
+				const url = new URL(window.location.href);
+				const savedVersion = url.searchParams.get('version');
+
+				if (savedVersion) {
+				document.getElementById("version").value = savedVersion;
+				}
+			}
+		
+		document.addEventListener('DOMContentLoaded', function(event) {
+			loadSavedState();
+			updateContent(event); 
+		});
+
+
+	</script>				
+
+	{% endif %}
+
+{% endblock %}

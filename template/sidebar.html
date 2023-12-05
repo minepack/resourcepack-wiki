@@ -1,0 +1,12 @@
+<div class="sidebar">
+	<div class="branding">
+		<a href="/">
+			<span>Rp Wiki</span>
+		</a>
+	</div>
+	<div class="links">
+		{% for link in links %}
+			<a href="{{ link.href }}" class="{{ link.type | lower }}">{{link.name}}</a>
+		{% endfor %}
+	</div>
+</div>

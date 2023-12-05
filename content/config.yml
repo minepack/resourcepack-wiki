@@ -32,18 +32,17 @@ groups:
   # Group that will contain posts sortable by given tags
   guides:
     title: 'Guides'
-    sortable:
-      tags:
-        fonts:
-          title: 'Fonts'
-          background: '#FFD700'
-          text-color: '#000000' 
-        blocks:
-          title: 'Blocks'
-          background: '#008000'
-          text-color: '#FFFFFF' 
-        entities:
-          title: 'Entities'
-          background: '#4169E1'
-          text-color: '#FFFFFF' 
+    tags:
+      fonts:
+        title: 'Fonts'
+        background: '#FFD700'
+        text-color: '#000000' 
+      blocks:
+        title: 'Blocks'
+        background: '#008000'
+        text-color: '#FFFFFF' 
+      entities:
+        title: 'Entities'
+        background: '#4169E1'
+        text-color: '#FFFFFF' 
 

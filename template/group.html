@@ -1,0 +1,93 @@
+{% extends "source/template/page.html" %}
+
+{% block title %}{{ group.title }}{% endblock %}
+
+{% block content %}
+<div class="content">
+
+    <!-- Title  -->
+    <h1>{{ group.title }}</h1>
+    
+    <!-- Content  -->
+
+    <div id="tags">
+    </div>
+    
+    <div id="cards">
+    </div>
+    
+</div>
+
+<script>
+    
+    const articles = [
+        {% for post in posts %}
+            {{post | raw}}	
+        {% endfor %}
+    ];
+    
+    const tagInfo = {
+        {% for tag in tags %}
+            {{tag | raw}}	
+        {% endfor %}
+    };
+    
+
+    function filterArticles() {
+        const selectedTags = Array.from(document.getElementsByClassName("tag active")).map(button => button.id);
+
+        const filteredArticles = articles.filter(article => {
+            if (selectedTags.length === 0) {
+                return true;
+            }
+            return article.tags.some(tag => selectedTags.includes(tag));
+        });
+
+        displayArticles(filteredArticles);
+    }
+
+    function displayArticles(articlesToDisplay) {
+        const articlesContainer = document.getElementById("cards");
+        articlesContainer.innerHTML = ""; 
+
+        articlesToDisplay.forEach(article => {
+            const cardElement = document.createElement("a");
+            cardElement.href = article.href;
+            cardElement.classList.add("card");
+            cardElement.innerHTML = `
+                <span class="title">${article.title}</span>
+                <p class="description">${article.description}</p>
+                <div class="tags">
+                    ${article.tags.map(tag => {
+                const tagStyle = tagInfo[tag] || {};
+                return `<span class="tag" style="background-color: ${tagStyle.backgroundColor || ''}; color: ${tagStyle.textColor || ''};">${tagInfo[tag]["title"]}</span>`;
+            }).join('')}
+                </div>`;
+            articlesContainer.appendChild(cardElement);
+        });
+    }
+
+    function displayTagButtons() {
+        const tagContainer = document.getElementById("tags");
+        tagContainer.innerHTML = ""; 
+
+        Object.keys(tagInfo).forEach(tag => {
+            const tagStyle = tagInfo[tag];
+            const button = document.createElement("button");
+            button.classList.add("tag");
+            button.id = tag;
+            button.style.backgroundColor = tagStyle.backgroundColor || '';
+            button.style.color = tagStyle.textColor || '';
+            button.textContent = tagInfo[tag]["title"];
+            button.addEventListener("click", () => {
+                button.classList.toggle("active");
+                filterArticles();
+            });
+            tagContainer.appendChild(button);
+        });
+    }
+
+    displayTagButtons();
+    filterArticles();
+</script>
+{% endblock %}

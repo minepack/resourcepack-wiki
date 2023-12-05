@@ -16,7 +16,7 @@ Learn how to manually add spaces into your resource pack.
 
 ### Modern versions (1.19+)
 Versions after 1.19 introduce a built-in “space” provider, in which you can define which unicodes offset and by how much. 
-As specified on the <a href="https://minecraft.wiki/w/Resource_pack#Fonts" target="_blank">Minecraft Wiki</a>, a spaces font provider looks like this:
+As specified on the [Minecraft Wiki](https://minecraft.wiki/w/Resource_pack#Fonts){ext}, a spaces font provider looks like this:
 
 ```json
 {
@@ -53,7 +53,7 @@ Following method utilizes a transparent 256x256 texture that is bound to a unico
 **1. Set up the texture**
 
 First of all, you need to get the actual negative space texture.<br/>
-You can either get it from [AmberWat’s repository](https://github.com/AmberWat/NegativeSpaceFont/tree/master/assets/space/textures/font){target="_blank"} or download the file from here:
+You can either get it from [AmberWat’s repository](https://github.com/AmberWat/NegativeSpaceFont/tree/master/assets/space/textures/font){ext} or download the file from here:
 [Download texture](/guides/adding-spaces/negative_space.png){download="negative_space.png"}
 
 
@@ -80,26 +80,13 @@ The provider itself looks like this:
 }
 ```
 
-From the above, you can see that we're assigning the negative_space texture to the character \uF001.
+From the above, you can see that we're assigning the negative_space texture to the character \\uF001.
 We're also making the ascent really low (it should not be changed).
 
 **3. Done**
 
-After that, you will have the unicode `\uF001` usable anywhere as a negative space symbol, that moves any text
+After that, you will have the unicode \\uF001 usable anywhere as a negative space symbol, that moves any text
 back (to the left) by 1 pixel.
-
-### Changing the offset amount
-If you want to increase by how much the symbol shifts to the left or right, change the `"height"` value.
-
-**x** = amount of pixels
-
-Shifting to the left
-* **x** must be less than 0, **height = x - 2**
-* For example, to offset to the left by -8 pixels, your height would be: **height = -8 - 2 = -10**
-
-Shifting to the right
-* **x** must be greater than 0, **height = x - 1**
-* For example, to offset to the right by 12 pxiles, your height would be: **height = 12 - 1 = 11**
 
 ### Using negative spaces
 
@@ -109,6 +96,19 @@ Meaning that if you have a space **A** that offsets -5 to the left and **B** tha
 combining them into **AB** will result in a total of -15 pixel offset. 
 (Keep in mind, that there is always a +1 pixel gap between any character, which may actually make that a -14 pixel offset)
 
+### Resources
+
+Explore various resources related to this topic!
+
+**Common**
+* [Minecraft Wiki Fonts](https://minecraft.wiki/w/Resource_pack#Fonts){ext} - Full page on fonts
+
+**Developers**
+* [creative](https://github.com/unnamed/creative){ext} - A resource-pack library for Minecraft: Java Edition
+* [glyphs](https://github.com/Brikster/glyphs){ext} - Library for convenient management of bitmap textures from Minecraft resourcepacks
+
+
+
 
 --- Plugins
 
@@ -117,9 +117,8 @@ combining them into **AB** will result in a total of -15 pixel offset.
 ### Provided offsets
 Resource pack plugins provide simple ways to define offsets, most of the time they’re already included and work in the form of placeholders. For example, here are how the popular resource pack plugins do it:
 
-[ItemsAdder Docs](https://itemsadder.devs.beer/plugin-usage/placeholderapi#offsets){target="_blank"}
-<br/>
-[Oraxen Docs](https://docs.oraxen.com/configuration/glyphs#placeholderapi){target="_blank"}
+* [ItemsAdder Docs](https://itemsadder.devs.beer/plugin-usage/placeholderapi#offsets){external}
+* [Oraxen Docs](https://docs.oraxen.com/configuration/glyphs#placeholderapi){external}
 
 
 <warning><b>Important!</b> You are using Vanilla!</warning>
