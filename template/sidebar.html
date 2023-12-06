@@ -5,7 +5,6 @@
 		</a>
 	</div>
 	<div class="links">
-		<p>Testing</p>
 		{% for link in links %}
 			<a href="{{ link.href }}" class="{{ link.type | lower }}">{{link.name}}</a>
 		{% endfor %}
