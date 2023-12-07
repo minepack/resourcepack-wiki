@@ -2,6 +2,12 @@
 
 {% block title %}{{ group.title }}{% endblock %}
 
+{% block head %}
+{% include "./meta/group-meta.html" %}
+<link rel="stylesheet" href="/prism.css">
+<script src="/prism.js"></script>
+{% endblock %}
+
 {% block content %}
 <div class="content">
 
