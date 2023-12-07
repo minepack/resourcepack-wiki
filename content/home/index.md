@@ -4,9 +4,7 @@ slug: 'index'
 relocate: ''
 ---
 
-## Resource Pack Wiki
-
-👋 Welcome!
+## 👋 Welcome!
 
 This is an open-source wiki, which covers all topics related to resource packs. 
 
