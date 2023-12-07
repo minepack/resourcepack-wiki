@@ -1,6 +1,7 @@
 ---
 title: 'Resource Pack Wiki'
 slug: 'index'
+description: 'An open-source wiki, which covers all topics related to resource packs. Here you will find useful resources and tips for developing your own, custom and unique servers, resource packs and plugins, utilizing the most recent known mechanics!'
 relocate: ''
 ---
 
