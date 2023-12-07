@@ -45,4 +45,8 @@ groups:
         title: 'Entities'
         background: '#4169E1'
         text-color: '#FFFFFF' 
+      items:
+        title: 'Items'
+        background: '#4287f5'
+        text-color: '#edeef0'
 

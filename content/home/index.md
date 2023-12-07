@@ -15,7 +15,7 @@ Here you will find useful resources and tips for developing your own, custom and
 
 [**Topics**](/topics) are filled with theory on various techniques and areas of resource packs.
 
-[**Guides**](/guides) are actual guides, that you can follow along to create content
+[**Guides**](/guides) are actual guides, that you can follow along to create content!
 
 ### Communities
 

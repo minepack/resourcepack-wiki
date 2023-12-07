@@ -1,6 +1,6 @@
 ---
 title: 'Adding spaces'
-slug: 'spaces' #Optional
+slug: 'spaces'
 description: 'Learn how to create negative spaces, which can be used to offset text!'
 tags:
 - fonts
