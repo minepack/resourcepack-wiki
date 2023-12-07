@@ -28,7 +28,7 @@ groups:
   topics:
     title: 'Topics'
     slug: 'topics' # Optional
-
+    
   # Group that will contain posts sortable by given tags
   guides:
     title: 'Guides'
