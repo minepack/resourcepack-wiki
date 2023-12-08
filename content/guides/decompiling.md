@@ -26,4 +26,4 @@ Once done, head into `server-resource-packs` and find out which resource pack is
 
 ![JD-GUI program window](/guides/decompiling/jdgui.webp)
 
-From there, choose `File -> Save All Sources`` and save the contents wherever you want. When done, you have an unlocked zip with all of the files. 🎉
+From there, choose `File -> Save All Sources` and save the contents wherever you want. When done, you have an unlocked zip with all of the files. 🎉
