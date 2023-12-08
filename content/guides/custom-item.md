@@ -13,7 +13,9 @@ tags:
 
 --- Vanilla
 
+
 WIP
+
 
 --- Oraxen
 
@@ -25,9 +27,10 @@ All of this information is also available on **Oraxens documentation [here](http
 
 ### 2D item
 
+![Lipstick item texture](/guides/custom-item/oraxen/lipstick.webp){style="max-width: 10dvh"}
+
 Let's create a lipstick item. Download the texture [here](/guides/custom-item/oraxen/lipstick.png){download="lipstick.png"}. (Texture made by Discord user danieyas 🙏)
 
-![Lipstick item texture](/guides/custom-item/oraxen/lipstick.webp)
 
 <br/>
 
@@ -69,20 +72,22 @@ This adds a new section called `Pack` into your item, which tells Oraxen how to 
 
 * This is best understood by going into the Minecrafts default resource pack files and looking for the parent files. Best place to do so, is [mcasset.cloud](https://mcasset.cloud/){ext}. For example the `item/generated` is located [here](https://mcasset.cloud/1.20.3/assets/minecraft/models/item){ext} (search for `generated.json`).
 
-Done! Now just [get your item](#getting-items).
+🎉 Done! Now just [get your item](#getting-items).
 
 ![Lipstick in-game](/guides/custom-item/oraxen/lipstick_ingame.webp)
 
 ### 3D item (model)
 
-For this example we'll use a ready, free [model from MC Models](https://mcmodels.net/model/izzys-fruit-basket/){ext}.\
-Download the pack from the website.
-
 ![Fruit basket page](/guides/custom-item/oraxen/fruit_basket.webp){style="max-width: 10dvh"}
 
 <br/>
 
-Models include a texture, and in order for the model to work - it must be able to find that texture. From the just downloaded models folder, open `fruit_basket.json`. At the very top, we can see the following:
+For this example we'll use a ready, free [model from MC Models](https://mcmodels.net/model/izzys-fruit-basket/){ext}.\
+Download the pack from the website.
+
+<br/>
+
+Models have textures defined inside of them, and in order for the model to work - it must be able to find those textures. From the just downloaded models folder, open `fruit_basket.json`. At the very top, we can see the following:
 ```json
 {
     "credit": "Made with Blockbench",
@@ -96,14 +101,15 @@ Models include a texture, and in order for the model to work - it must be able t
 
 <br/>
 
-Looks like by default, this model will look for textures inside `assets/minecraft/textures/item`. You can change this path or let it stay. As an example, we'll change both textures in this model to `myitems/fruit_basket_texture` (notice .png is not specified). *Remember to save*.
+As you can see, the default texture for this model is `item/fruit_basket_texture`.\
+Let's change it to `myitems/fruit_basket_texture` (notice .png is not specified).\
+*Remember to save your changes!*
 
 Now onto importing the files into Oraxen:
 * Put `fruit_basket_texture.png` -> `Oraxen/pack/textures/myitems`
 * Put `fruit_basket.json` -> `Oraxen/pack/models`
 
-
-Now, last step is to configure this model in Oraxen. Once again, head into `Oraxen/items` and find a suitable yml file. Configure the item like so:
+All our assets are in! Now time to use them in an Oraxen item. Once again, head into `Oraxen/items` and find a suitable yml file. Configure the item like so:
 
 ```yml
 basket:
@@ -114,7 +120,7 @@ basket:
     model: fruit_basket.json
 ```
 
-Done! Now just [get your item](#getting-items).
+🎉 Done!  Now just [get your item](#getting-items).
 
 ![Basket in-game](/guides/custom-item/oraxen/basket_ingame.webp)
 
@@ -129,6 +135,13 @@ To further change how an item looks or for details on how to configure items lik
 WIP
 
 </versions>
+
+
+
+
+
+
+
 
 
 ## Getting items
