@@ -106,6 +106,12 @@ Done! Now just [get your item](#getting-items).
 
 ![Basket in-game](/guides/custom-item/oraxen/basket_ingame.webp)
 
+### Extras
+
+Oraxen allows you to configure items to have other advanced properties, such as lore, enchants, furniture and many other things. All these properties and their usage are documented on the [Items (Advanced) page](https://docs.oraxen.com/configuration/items-advanced){ext}.
+
+To further change how an item looks or for details on how to configure items like bows and fishing rods, check out the [Item Appearance page](https://docs.oraxen.com/configuration/item-appearance){ext}.
+
 --- ItemsAdder
 
 WIP
