@@ -7,7 +7,7 @@ relocate: ''
 
 ## 👋 Welcome!
 
-This is an open-source wiki, which covers all topics related to resource packs. 
+This is an open-source wiki, which covers all topics related to **Java** resource packs. 
 
 Here you will find useful resources and tips for developing your own, custom and unique servers, resource packs and plugins, utilizing the most recent known mechanics!
 
