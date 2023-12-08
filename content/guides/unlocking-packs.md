@@ -24,6 +24,6 @@ One such simple program is called JD-GUI. It is a decompiler for Java programs, 
 
 Once done, head into `server-resource-packs` and find out which resource pack is the one you wish to open. Once you find it, rename it to end with `.jar`. Then, drag the file into opened JD-GUI. You should be met with the following view:
 
-![JD-GUI program window](/guides/decompiling/jdgui.webp)
+![JD-GUI program window](/guides/unlocking-packs/jdgui.webp)
 
 From there, choose `File -> Save All Sources` and save the contents wherever you want. When done, you have an unlocked zip with all of the files. 🎉
