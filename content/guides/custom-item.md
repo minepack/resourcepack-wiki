@@ -11,6 +11,8 @@ tags:
 
 --- Vanilla
 
+.
+
 --- Oraxen
 
 <tip>
@@ -22,7 +24,7 @@ All of this information is also available on Oraxens documentation [here](https:
 Head into `plugins/Oraxen/items` and choose an existing yml file or create a new one with any name. This file will contain your item configurations.
 
 Here's the base Oraxen item configuration:
-```yaml
+```yml
 item:
   displayname: "<yellow>Item Name"
   material: PAPER
