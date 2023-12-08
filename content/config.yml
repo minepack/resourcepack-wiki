@@ -4,6 +4,7 @@ sidebar:
   # Define which posts are featured on the sidebar from different groups
   featured:
     topics:
+    - pack
     - fonts
     - blocks
     - items
