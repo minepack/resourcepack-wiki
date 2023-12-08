@@ -1,5 +1,6 @@
 ---
 title: 'Creating custom items'
+description: 'Learn how to create your own custom items.'
 slug: 'creating-items'
 tags:
 - items
