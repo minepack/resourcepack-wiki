@@ -1,8 +1,7 @@
 ---
 title: 'Creating custom items'
-description: 'Learn how to create your own custom items.'
+description: 'Learn how to create your own items with customized textures and models ✨'
 slug: 'custom-items'
-hidden: true
 tags:
 - items
 ---
