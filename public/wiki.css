@@ -148,6 +148,14 @@ body {
         }
 
     }
+
+    & code {
+        color: rgb(219, 20, 20);
+        background-color: rgb(246, 241, 241);
+        border-radius: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     
     & #cards {
         display: flex;
