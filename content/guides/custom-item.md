@@ -19,11 +19,7 @@ WIP
 
 --- Oraxen
 
-<info>
-
-All of this information is also available on **Oraxens documentation [here](https://docs.oraxen.com/configuration/create-your-first-item){ext}**.
-
-</info>
+<info>All of this information is also available on **Oraxens documentation [here](https://docs.oraxen.com/configuration/create-your-first-item){ext}**.</info>
 
 ### 2D item
 
