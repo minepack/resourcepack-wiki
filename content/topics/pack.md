@@ -7,7 +7,7 @@ slug: 'pack'
 
 A resource pack, is a folder filled with assets and files that describe how those assets are displayed in the game.
 
-There are various content types that can be added or edited in resource packs, these include but are not limited to items, blocks, tiles, fonts and sounds.
+There are various content types that can be added or edited in resource packs. These include but are not limited to; blocks, sounds, fonts, languages, items, particles, shaders and textures.
 
 ## How are resource packs used / applied?
 
@@ -26,7 +26,7 @@ In the root of a resource pack, there are the following files:
 Minecraft Wiki documents the contents of all of these files in more detail:
 
 [Contents of the pack.mcmeta](https://minecraft.wiki/w/Resource_pack#Contents){ext}<br/>
-[Contents of the assets folder](https://minecraft.wiki/w/Resource_pack#Template){ext} (important!)
+[Contents of the assets folder](https://minecraft.wiki/w/Resource_pack#Template){ext} **(Important!)**
 
 ## Terms
 
@@ -38,7 +38,7 @@ Namespaces can have any lower case Latin name. For example, if you are working o
 assets
 | - minecraft
 	| - font
-  | - textures
+    | - textures
 	| - ...
 | - gamemode1
 	| - textures

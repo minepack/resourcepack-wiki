@@ -34,6 +34,10 @@ groups:
   guides:
     title: 'Guides'
     tags:
+      pack:
+        title: 'Pack'
+        background: '#e9e8eb'
+        text-color: '#171617'
       fonts:
         title: 'Fonts'
         background: '#FFD700'
