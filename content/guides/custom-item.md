@@ -29,6 +29,8 @@ Let's create a lipstick item. Download the texture [here](/guides/custom-item/or
 
 ![Lipstick item texture](/guides/custom-item/oraxen/lipstick.webp)
 
+<br/>
+
 Head into `plugins/Oraxen/items` and choose an existing yml file or create a new one with any name. This file will contain your item configurations.
 
 Here's the base Oraxen item configuration:
@@ -41,6 +43,9 @@ lipstick:
 Drop your texture into `plugins/Oraxen/pack/textures` (you can create any folders within, for example `/textures/myitems` or `/textures/magic`). For this guide, we'll put it into `/textures/myitems`
 
 ![myitems folder inside Oraxen/pack/textures](/guides/custom-item/oraxen/myitems_folder.webp)
+
+<br/>
+<br/>
 
 Next, modify the above Oraxen item configuration:
 ```yml
@@ -74,6 +79,8 @@ For this example we'll use a ready, free [model from MC Models](https://mcmodels
 
 ![Fruit basket page](/guides/custom-item/oraxen/fruit_basket.webp)
 
+<br/>
+
 Models include a texture, and in order for the model to work - it must be able to find that texture. From the just downloaded models folder, open `fruit_basket.json`. At the very top, we can see the following:
 ```json
 {
@@ -85,6 +92,9 @@ Models include a texture, and in order for the model to work - it must be able t
 	},
 ...
 ```
+
+<br/>
+
 Looks like by default, this model will look for textures inside `assets/minecraft/textures/item`. You can change this path or let it stay. As an example, we'll change both textures in this model to `myitems/fruit_basket_texture` (notice .png is not specified). *Remember to save*.
 
 Now we have to put our texture on that path. Put the `fruit_basket_texture.png` from the zip into `Oraxen/pack/textures/myitems`.
