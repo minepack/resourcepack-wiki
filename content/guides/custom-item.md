@@ -75,7 +75,8 @@ Done! Now just [get your item](#getting-items).
 
 ### 3D item (model)
 
-For this example we'll use a ready, free [model from MC Models](https://mcmodels.net/model/izzys-fruit-basket/){ext}. Download the zip file from there.
+For this example we'll use a ready, free [model from MC Models](https://mcmodels.net/model/izzys-fruit-basket/){ext}.\
+Download the pack from the website.
 
 ![Fruit basket page](/guides/custom-item/oraxen/fruit_basket.webp){style="max-width: 10dvh"}
 
