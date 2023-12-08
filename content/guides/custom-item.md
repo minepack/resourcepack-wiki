@@ -27,6 +27,8 @@ All of this information is also available on **Oraxens documentation [here](http
 
 Let's create a lipstick item. Download the texture [here](/guides/custom-item/lipstick.png){download="lipstick.png"}.
 
+![Lipstick item texture](/guides/custom-item/lipstick.webp)
+
 Head into `plugins/Oraxen/items` and choose an existing yml file or create a new one with any name. This file will contain your item configurations.
 
 Here's the base Oraxen item configuration:
@@ -36,7 +38,9 @@ lipstick:
   material: PAPER
 ```
 
-Drop your texture into `plugins/Oraxen/pack/textures` (you can create any folders within, for example `/textures/myitems` or `/textures/magic`)
+Drop your texture into `plugins/Oraxen/pack/textures` (you can create any folders within, for example `/textures/myitems` or `/textures/magic`). For this guide, we'll put it into `/textures/myitems`
+
+![myitems folder inside Oraxen/pack/textures](/guides/custom-item/oraxen_folder.webp)
 
 Next, modify the above Oraxen item configuration:
 ```yml
