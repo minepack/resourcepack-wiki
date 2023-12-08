@@ -57,13 +57,14 @@ lipstick:
 This adds a new section called `Pack` into your item, which tells Oraxen how to generate your model. 
 
 * The `generate_model: true` is a simple switch to enable generation
-* `parent_model: item/generated` dictates the path of the parent model. In this case, it's using Mojang's built-in model, which has some presets for how the model looks in-hand and other places. *****
+
+* `parent_model: item/generated` dictates the path of the parent model. In this case, it's using Mojang's built-in model, which has some presets for how the model looks in-hand and other places.This is best understood by going into the Minecrafts default resource pack files and looking for the parent files. Best place to do so, is [mcasset.cloud](https://mcasset.cloud/){ext}. For example the `item/generated` is located [here](https://mcasset.cloud/1.20.3/assets/minecraft/models/item){ext} (search for `generated.json`).
+
 * `textures` field declares a list of textures. Some models may require multiple textures (like for example blocks that have different faces, read more [here](https://docs.oraxen.com/configuration/item-appearance#create-a-simple-2d-item){ext}). In our case `item/generated` only needs one texture.
 
+* This is best understood by going into the Minecrafts default resource pack files and looking for the parent files. Best place to do so, is [mcasset.cloud](https://mcasset.cloud/){ext}. For example the `item/generated` is located [here](https://mcasset.cloud/1.20.3/assets/minecraft/models/item){ext} (search for `generated.json`).
 
-***** This is best understood by going into the Minecrafts default resource pack files and looking for them. Best place to do so, is [mcasset.cloud](https://mcasset.cloud/){ext}. For example the `item/generated` is located [here](https://mcasset.cloud/1.20.3/assets/minecraft/models/item){ext} (search for `generated.json`).
-
-After that, [get your item](#getting-items).
+Done! Now just [get your item](#getting-items).
 
 ![Lipstick in-game](/guides/custom-item/oraxen/lipstick_ingame.webp)
 
