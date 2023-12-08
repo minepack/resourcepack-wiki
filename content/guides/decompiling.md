@@ -1,7 +1,7 @@
 ---
 title: 'Unlocking Packs'
-slug: 'unlocking'
-description: 'Guide on how to unlock corrupted server resource packs'
+slug: 'unlocking-packs'
+description: 'Guide on how to unlock corrupted server resource packs.'
 tags:
 - pack
 ---

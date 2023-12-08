@@ -47,4 +47,4 @@ assets
 	| - ...
 ```
 
-When referring to a namespace in Minecraft, you have to define it before a texture path for example. When playing a sound from outside the `minecraft`` namespace, you would use `mynamespace:sound_pathsound_name`` where it is needed. Same thing when defining a texture path like `gamemode1:customtextures/blue_ball.png``.
+When referring to a namespace in Minecraft, you have to define it before a texture path for example. When playing a sound from outside the `minecraft` namespace, you would use `mynamespace:sound_pathsound_name` where it is needed. Same thing when defining a texture path like `gamemode1:customtextures/blue_ball.png`.

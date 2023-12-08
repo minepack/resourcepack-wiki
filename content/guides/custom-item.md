@@ -27,7 +27,7 @@ All of this information is also available on **Oraxens documentation [here](http
 
 ### 2D item
 
-![Lipstick item texture](/guides/custom-item/oraxen/lipstick.webp){style="max-width: 10dvh"}
+![Lipstick item texture](/guides/custom-item/oraxen/lipstick.webp){style="max-width: 30dvh"}
 
 Let's create a lipstick item. Download the texture [here](/guides/custom-item/oraxen/lipstick.png){download="lipstick.png"}. (Texture made by Discord user danieyas 🙏)
 
