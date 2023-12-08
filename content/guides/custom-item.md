@@ -77,7 +77,7 @@ Done! Now just [get your item](#getting-items).
 
 For this example we'll use a ready, free [model from MC Models](https://mcmodels.net/model/izzys-fruit-basket/){ext}. Download the zip file from there.
 
-![Fruit basket page](/guides/custom-item/oraxen/fruit_basket.webp)
+![Fruit basket page](/guides/custom-item/oraxen/fruit_basket.webp){style="max-width: 10dvh"}
 
 <br/>
 
@@ -97,11 +97,12 @@ Models include a texture, and in order for the model to work - it must be able t
 
 Looks like by default, this model will look for textures inside `assets/minecraft/textures/item`. You can change this path or let it stay. As an example, we'll change both textures in this model to `myitems/fruit_basket_texture` (notice .png is not specified). *Remember to save*.
 
-Now we have to put our texture on that path. Put the `fruit_basket_texture.png` from the zip into `Oraxen/pack/textures/myitems`.
+Now onto importing the files into Oraxen:
+* Put `fruit_basket_texture.png` -> `Oraxen/pack/textures/myitems`
+* Put `fruit_basket.json` -> `Oraxen/pack/models`
 
-Then, drop the `fruit_basket.json` model into `Oraxen/pack/models`. Now, last step is to configure this model in Oraxen. Once again, head into `Oraxen/items` and find a suitable yml file.
 
-Configure the item like so:
+Now, last step is to configure this model in Oraxen. Once again, head into `Oraxen/items` and find a suitable yml file. Configure the item like so:
 
 ```yml
 basket:
