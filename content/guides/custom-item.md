@@ -77,10 +77,10 @@ For this example we'll use a ready, free [model from MC Models](https://mcmodels
 Models include a texture, and in order for the model to work - it must be able to find that texture. From the just downloaded models folder, open `fruit_basket.json`. At the very top, we can see the following:
 ```json
 {
-	"credit": "Made with Blockbench",
+    "credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "item/fruit_basket_texture",
+        "0": "item/fruit_basket_texture",
 		"particle": "item/fruit_basket_texture"
 	},
 ...
@@ -101,6 +101,10 @@ basket:
     generate_model: false
     model: fruit_basket.json
 ```
+
+Done! Now just [get your item](#getting-items).
+
+![Basket in-game](/guides/custom-item/oraxen/basket_ingame.webp)
 
 --- ItemsAdder
 
